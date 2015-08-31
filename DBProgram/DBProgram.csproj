@@ -79,6 +79,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerQuery.cs" />
+    <Compile Include="ICommand.cs" />
     <Compile Include="Model\Customer.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
