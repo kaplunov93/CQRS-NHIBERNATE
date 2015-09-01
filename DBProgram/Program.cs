@@ -18,6 +18,7 @@ namespace DBProgram
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            SessionFactory.GetFactory();
             Application.Run(new Form1());
         }
 

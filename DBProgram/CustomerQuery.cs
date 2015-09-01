@@ -17,7 +17,8 @@ namespace DBProgram
             {
                 var query = session.CreateQuery("from Customer where id= :ID");
                 query.SetParameter("ID", id);
-                customer =query.List<Customer>().First();
+                if(query.List<Customer>().Count>0)
+                    customer =query.List<Customer>().First();
             }
             return customer;
         }
